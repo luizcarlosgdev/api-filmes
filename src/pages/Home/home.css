@@ -1,0 +1,109 @@
+.container-cards{
+  background-color:#4f4f4f;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-image{
+  width: 100%;
+  height: 10%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card{
+  text-align: center;
+}
+
+.container-image{
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.more-info{
+  color: #ddddddb0;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.more-info:hover{
+  color: #db0000;
+  transform: scale(1.2);
+}
+
+.filme-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 1440px){
+  /* Estilos para laptops e monitores maiores */
+  .card{
+    width: 20%;
+    height: 50%;
+    margin: 20px;
+  }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* Estilos para laptops e monitores maiores */
+  .card{
+    width: 30%;
+    height: 50%;
+    margin: 20px
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Estilos para monitores menores e laptops */
+
+  .card{
+    width: 40%;
+    height: 50%;
+    margin: 20px
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets em modo paisagem e monitores menores */
+  .card{
+    width: 50%;
+    height: 50%;
+    margin: 20px
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para tablets e dispositivos com telas de tamanho semelhante */
+  .card{
+    width: 90%;
+    height: 50%;
+    margin: 20px
+  }
+}
+
+@media (max-width: 480px){
+  /* Estilos para dispositivos móveis */
+  .card{
+    width: 95%;
+    height: 50%;
+    margin: 20px
+  }
+}
+
+
+/* Estilo tela de espera */
+.render-loading{
+  background-color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+}

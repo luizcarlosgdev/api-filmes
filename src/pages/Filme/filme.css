@@ -1,0 +1,61 @@
+.filme-container{
+  background-color: #4f4f4f;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+}
+
+.filme-detalhes{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filme-image{
+  margin: 3%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.filme-nome{
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.filme-sinopse{
+  text-align: justify;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.filme-classificação{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filme-button-container{
+  display: flex;
+  gap: 250px;
+}
+
+.filme-button-container button{
+  color: #fff;
+  text-decoration: none;
+  background: #db0000;
+  padding: 8px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+}
+
+.filme-button-container a{
+  text-decoration: none;
+  color: #fff;
+}

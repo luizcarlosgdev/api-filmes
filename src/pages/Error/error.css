@@ -1,0 +1,27 @@
+.container-error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f4f4f;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.background-error{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.492);
+  padding: 200px;
+  color: #fff;
+}
+
+.button-home{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 40px;
+  border-radius: 2px;
+  width: 40px;
+  margin-top: 15px
+}
