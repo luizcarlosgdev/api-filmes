@@ -65,28 +65,28 @@ function Filme(){
 
   return(
     <div class='filme-container'>
-      <div class='filme-detalhes'>
         <img
           class='filme-image' 
           src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`}
           alt='imagem-filme'
         />
-        <span class='filme-nome'>{filme.title}</span>
-        <span class='filme-sinopse'>{filme.overview}</span>
-        <span class='filme-classificação'>{filme.vote_average}/10</span>
-        <div class='filme-button-container'>
-          <button>
-            <a target='blank' href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`}>
-              Trailer
-            </a>
-          </button>
-          <button
-            onClick={salvarFilme}
-          >
-            Favoritar
-          </button>
+        <div class='filme-content'>
+          <span class='filme-nome'>{filme.title}</span>
+          <span class='filme-sinopse'>{filme.overview}</span>
+          <span class='filme-classificação'>{filme.vote_average}/10</span>
+          <div class='filme-button-container'>
+            <button>
+              <a target='blank' href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`}>
+                Trailer
+              </a>
+            </button>
+            <button
+              onClick={salvarFilme}
+            >
+              Favoritar
+            </button>
+          </div>
         </div>
-      </div>
     </div>
   )
 }
