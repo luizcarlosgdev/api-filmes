@@ -1,37 +1,46 @@
-.fav-area{
+.fav-container{
   background-color: #4f4f4f;
   min-height: calc(100vh - 50px);
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 0;
+  box-sizing: border-box;
 }
 
-.fav-container{
-  width: 50%;
+.fav-container h1{
+  font-size: 30px;
 }
 
 .fav-cards{
-  margin: 3% auto;
+  margin: 1%;
   display: flex;
-
-}
-
-.fav-cards img{
-  width: 50%;
-  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fav-actions{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 20px;
+  padding: 20px 0;
+  gap: 50px;
+  text-transform: uppercase;
 }
 
-.fav-title{
-  font-size: 20px;
-  color: #000;
+.fav-cards img{
+  min-width: 350px;
+  max-width: 40%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.fav-actions a{
+  color: #fff;
+  text-decoration: none;
+  background: #db0000;
+  padding: 8px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 .fav-actions button{
@@ -43,17 +52,8 @@
   text-transform: uppercase;
   font-size: 13px;
   border: none;
-  margin: 10px 0;
 }
 
-.fav-actions a{
-  color: #fff;
-  text-decoration: none;
-  background: #db0000;
-  padding: 8px 10px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 13px;
-  border: none;
-  margin: 10px 0;
+.fav-title{
+  font-size: 20px;
 }

@@ -2,9 +2,9 @@ import './filme.css'
 import {useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import api from '../../services/api'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Loading from '../../components/Loading'
-import { CgMoreO } from 'react-icons/cg'
+import { toast } from 'react-toastify'
 
 function Filme(){
 
@@ -46,13 +46,13 @@ function Filme(){
     const searchFilm = filmesSalvos.some((oldFilm) => oldFilm.id === filme.id)
 
     if(searchFilm){
-      alert('ta louco meo, filme já adicionado!')
+      toast.warning('ta louco meo, filme já adicionado!')
       return
     }
 
     filmesSalvos.push(filme)
     localStorage.setItem('@primeFlix', JSON.stringify(filmesSalvos))
-    alert('Filme adicionado!')
+    toast.success('Filme adicionado com sucesso!')
   }
 
   if(loading){
